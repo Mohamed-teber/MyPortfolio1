@@ -8,7 +8,7 @@ export const TechStack: React.FC = () => {
   const categories = [
     'All',
     'Virtualization',
-    'Cloud & Systems',
+    'Hyper-Cloud & Systems',
     'Network & Security',
     'Storage & Backup',
     'Tools & Scripting',

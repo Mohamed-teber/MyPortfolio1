@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
           <div>
             <span className="text-base font-bold font-display text-white">Mohamed Teber</span>
             <p className="text-xs text-slate-500 mt-1 max-w-md">
-              IT Systems, Cloud & Network Infrastructure Engineer. Specializing in high-availability VMware clusters, Microsoft 365 migrations, Active Directory security, and disaster recovery.
+              IT Systems, Hyper-Cloud & Network Infrastructure . Specializing in high-availability VMware clusters, Microsoft 365 migrations, Active Directory security, and disaster recovery.
             </p>
           </div>
 

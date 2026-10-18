@@ -8,8 +8,8 @@ export const NAV_LINKS = [
 ];
 
 export const SYSTEM_STATUS = {
-  availability: 'Available for Senior IT / Systems & Cloud Roles',
+  availability: 'Available for Senior IT / Systems & Hybrid-Cloud Roles',
   uptimeTarget: '99.99%',
   primarySpecialty: 'Enterprise Systems, VMware, M365 & Security',
-  location: 'Paris, France / Remote Friendly',
+  location: 'Tunis, Tunisia / Remote Friendly',
 };

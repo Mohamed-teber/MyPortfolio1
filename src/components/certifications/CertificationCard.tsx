@@ -9,14 +9,16 @@ interface CertificationCardProps {
 export const CertificationCard: React.FC<CertificationCardProps> = ({ cert }) => {
   const getIssuerColor = (issuer: string) => {
     switch (issuer) {
-      case 'Microsoft': return 'text-sky-400 border-sky-800/40 bg-sky-950/30';
-      case 'VMware': return 'text-emerald-400 border-emerald-800/40 bg-emerald-950/30';
-      case 'Veeam': return 'text-emerald-400 border-emerald-800/40 bg-emerald-950/30';
-      case 'Cisco': return 'text-cyan-400 border-cyan-800/40 bg-cyan-950/30';
-      case 'Fortinet': return 'text-red-400 border-red-800/40 bg-red-950/30';
-      default: return 'text-cyan-400 border-cyan-800/40 bg-cyan-950/30';
+      case 'UDEMY': return 'text-sky-400 border-sky-800/40 bg-sky-950/30';
+      case 'Hewlett Packard Enterprise': return 'text-emerald-400 border-emerald-800/40 bg-emerald-950/30';
+      case 'Proofpoint': return 'text-emerald-400 border-emerald-800/40 bg-emerald-950/30';
+      // case 'Cisco': return 'text-cyan-400 border-cyan-800/40 bg-cyan-950/30';
+      // case 'Fortinet': return 'text-red-400 border-red-800/40 bg-red-950/30';
+      // default: return 'text-cyan-400 border-cyan-800/40 bg-cyan-950/30';
     }
   };
+
+  const badgeCode = 'badgeCode' in cert ? cert.badgeCode : cert.credentialId;
 
   return (
     <div className="bg-slate-900/60 hover:bg-slate-900/90 border border-slate-800 hover:border-slate-700/80 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between space-y-5">
@@ -34,9 +36,9 @@ export const CertificationCard: React.FC<CertificationCardProps> = ({ cert }) =>
             </div>
           </div>
 
-          <span className="font-mono text-xs px-2.5 py-1 rounded bg-slate-950 border border-slate-800 text-cyan-300 font-semibold">
+          {/* <span className="font-mono text-xs px-2.5 py-1 rounded bg-slate-950 border border-slate-800 text-cyan-300 font-semibold">
             {cert.badgeCode}
-          </span>
+          </span> */}
         </div>
 
         {/* Title */}

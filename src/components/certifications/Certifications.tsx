@@ -6,7 +6,7 @@ import { SectionTitle } from '../ui/SectionTitle';
 export const Certifications: React.FC = () => {
   const [selectedIssuer, setSelectedIssuer] = useState<string>('All');
 
-  const issuers = ['All', 'Microsoft', 'VMware', 'Veeam', 'Cisco', 'Fortinet', 'PeopleCert'];
+  const issuers = ['All', 'UDEMY', 'Hewlett Packard Enterprise', 'Proofpoint'];
 
   const filteredCerts = selectedIssuer === 'All'
     ? CERTIFICATIONS
@@ -19,7 +19,7 @@ export const Certifications: React.FC = () => {
           <SectionTitle
             label="Verified Credentials"
             title="Industry Certifications & Authorizations"
-            subtitle="Formally recognized credentials spanning Microsoft Azure & 365, VMware vSphere, Veeam Data Protection, Cisco Networking, and ITIL."
+            subtitle="Formally recognized credentials spanning UDEMY, Hewlett Packard Enterprise, Proofpoint,"
             className="mb-0"
           />
 
